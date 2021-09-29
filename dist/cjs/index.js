@@ -57,7 +57,7 @@ class NextStrictCSP extends _document_1.Head {
           "default-src 'none'", 
           "object-src 'none'", 
           "frame-ancestors 'self'",
-          "img-src 'self' *.bam-x.com *.narrativ.com https:",
+          "img-src 'self' *.bam-x.com *.narrativ.com https: *narrativ.vercel.app",
           "frame-src 'self' *.bam-x.com *.narrativ.com",            
           // `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com`,
           `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')}`,
