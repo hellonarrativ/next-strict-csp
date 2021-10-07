@@ -57,14 +57,14 @@ class NextStrictCSP extends _document_1.Head {
           "default-src 'none'", 
           "object-src 'none'", 
           "frame-ancestors 'self'",
-          "img-src 'self' *.bam-x.com *.narrativ.com https: blob:",
+          "img-src 'self' *.bam-x.com *.narrativ.com https: blob: https://rs.fullstory.com",
           "frame-src 'self' *.bam-x.com *.narrativ.com",            
           // `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com`,
-          `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')}`,
+          `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')} https://edge.fullstory.com https://rs.fullstory.com`,
           "manifest-src 'self'",
           "style-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com",
           "font-src 'self' *.bam-x.com *.narrativ.com",
-          "connect-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.datadoghq.com *.google-analytics.com",
+          "connect-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.datadoghq.com *.google-analytics.com https://rs.fullstory.com",
         ].join('; '); 
         
         const newChildren = [];
