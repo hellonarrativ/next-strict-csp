@@ -58,7 +58,7 @@ class NextStrictCSP extends _document_1.Head {
           "object-src 'none'", 
           "frame-ancestors 'self'",
           "img-src 'self' *.bam-x.com *.narrativ.com https: blob: https://rs.fullstory.com",
-          "frame-src 'self' *.bam-x.com *.narrativ.com" "*.loom.com",            
+          "frame-src 'self' *.bam-x.com *.narrativ.com *.loom.com",            
           // `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com`,
           `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')} https://edge.fullstory.com https://rs.fullstory.com`,
           "manifest-src 'self'",
