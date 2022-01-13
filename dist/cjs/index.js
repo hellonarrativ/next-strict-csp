@@ -61,9 +61,9 @@ class NextStrictCSP extends _document_1.Head {
           "frame-src 'self' *.bam-x.com *.narrativ.com *.loom.com",
           "media-src 'self' *.bam-x.com *.narrativ.com",
           // `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com`,
-          `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com *.vercel.app ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')} https://edge.fullstory.com https://rs.fullstory.com`,
+          `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.google-analytics.com ${cspHashOf(nextJsSPA)} ${NextStrictCSP.inlineJsHashed.join(' ')} https://edge.fullstory.com https://rs.fullstory.com`,
           "manifest-src 'self'",
-          "style-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.vercel.app",
+          "style-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com",
           "font-src 'self' *.bam-x.com *.narrativ.com",
           "connect-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com *.hasura.app *.datadoghq.com *.google-analytics.com https://rs.fullstory.com",
         ].join('; '); 
