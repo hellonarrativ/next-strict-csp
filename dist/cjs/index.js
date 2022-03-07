@@ -57,7 +57,7 @@ class NextStrictCSP extends _document_1.Head {
           "default-src 'none'", 
           "object-src 'none'", 
           "frame-ancestors 'self'",
-          "img-src 'self' *.bam-x.com *.narrativ.com https: blob: https://rs.fullstory.com",
+          "img-src 'self' *.bam-x.com *.narrativ.com http: https: blob: https://rs.fullstory.com",
           "frame-src 'self' *.bam-x.com *.narrativ.com *.loom.com",
           "media-src 'self' *.bam-x.com *.narrativ.com blob: https://static-bam-x-com.s3.amazonaws.com",
           // `script-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com`,
