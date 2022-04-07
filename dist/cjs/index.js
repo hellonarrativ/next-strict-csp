@@ -66,7 +66,7 @@ class NextStrictCSP extends _document_1.Head {
           "style-src 'self' *.bam-x.com *.narrativ.com *.launchdarkly.com",
           "font-src 'self' *.bam-x.com *.narrativ.com data:",
           "prefetch-src 'self' *.vercel.app",
-          "connect-src 'self' *.bam-x.com *.narrativ.com *.mixpanel.com *.launchdarkly.com *.hasura.app *.datadoghq.com *.google-analytics.com rs.fullstory.com static-bam-x-com.s3.amazonaws.com",
+          "connect-src 'self' *.bam-x.com *.narrativ.com *.doubleclick.net *.mixpanel.com *.launchdarkly.com *.hasura.app *.datadoghq.com *.google-analytics.com rs.fullstory.com static-bam-x-com.s3.amazonaws.com",
         ].join('; '); 
         
         const newChildren = [];
